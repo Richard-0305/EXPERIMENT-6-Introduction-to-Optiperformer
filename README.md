@@ -1,103 +1,65 @@
-
-Exp 6 Simulation of Optical Communication System
-## Introduction to OptiPerformer 
-## Objective
+# Exp 6 Simulation of Optical Communication System
+# AIM:
 Download and install OptiPerformer software on your computer and run a sample file.
 
----
+# EQUIPMENTS REQUIRED:
+Optisystem Software – OptiPerformer 22.0
 
-## Overview
+# THEORY:
+Optiwave introduces OptiPerformer, a free photonic design automation tool which harnesses the full power of OptiSystem and creates specific dynamic design scenarios which can be used by students. In this exercise, you will download and install OptiPerformer on your PC/laptop. Your license of OptiPerformer will be capable of loading and running OptiSystem simulations prepared for this course. Once you have installed OptiPerformer, you can copy the first file (named: ‘Introduction_OptiPerformer.osp’) to your PC and run the simulation. The first file is a basic fiber optic system consisting of a transmitter, a fiber and a receiver. The system is “instrumented” with an optical power meter at the input to receiver (or the output of the fiber) and a bit error rate (BER) analyzer.
 
-Optiwave introduces **OptiPerformer**, a free photonic design automation tool that harnesses the full power of OptiSystem and creates specific dynamic design scenarios for student use.
+# PROCEDURE:
+Download and install OptiPerformer from the optiwave.com web site.
 
-In this exercise, you will:
-- Download and install OptiPerformer on your PC/laptop.
-- Use your license to load and run OptiSystem simulations prepared for this course.
+Copy the ‘Introduction_OptiPerformer.osp’ file to your PC
 
-The first simulation file (`Introduction_OptiPerformer.osp`) models a basic fiber optic system consisting of:
-- A transmitter
-- A fiber
-- A receiver
+Start OptiPerformer
 
-The system includes:
-- An optical power meter at the receiver input (fiber output)
-- A Bit Error Rate (BER) analyzer
+Use either the File menu or the Open File button to open the Fiber Optic System File.
 
----
+Study the layout, which includes some text and boxes to identify the three components of the fiber optic system. 
 
-## Instructions
+The “transmitter” section includes a binary source (PRBS or pseudo-random bit sequence generator), an electrical pulse generator, a laser diode and an external modulator. 
 
-1. Download and install OptiPerformer from [optiwave.com](https://optiwave.com).  
-2. Copy the `Introduction_OptiPerformer.osp` file to your PC.  
-3. Launch OptiPerformer.  
-4. Use the **File** menu or **Open File** button to open the fiber optic system file.  
-5. Study the layout:
-   - **Transmitter** section includes:
-     - Binary source (PRBS generator)
-     - Electrical pulse generator
-     - Laser diode
-     - External modulator  
-   - **Receiver** section includes:
-     - Photodiode
-     - Low-pass filter
-     - Decision circuit with BER analyzer  
-6. Run the simulation using the **Start** button.  
-   - Progress will be displayed.
-   - Message “Calculation Finished!” appears upon completion.  
-7. Double-click the **optical power meter** and **BER analyzer** windows.  
-   - Check “Show Eye Diagram” in the BER window.  
-   - Optical power meter shows power in watts and dBm.  
-   - BER window displays:
-     - Eye diagram
-     - Max Q Factor
-     - Min BER  
-8. The simulation runs 5 iterations with fiber length varying from 50 to 150 km.  
-   - Use forward/reverse buttons to step through iterations.  
-   - Observe changes in received power, BER, Q factor, and eye diagram.
+The receiver section includes a photodiode, a low-pass filter and a decision circuit, which includes a BER analyzer. We will cover these components in more detail later in the course.
 
----
+Run the simulation by pushing the start button. The progress of the simulation will be displayed and the message “Calculation Finished!” will appear when the simulation runs to completion.
 
-## Report
+Double click on the optical power meter and the BER analyzer and move the windows as necessary for clarity. 
 
-1. Cover sheet (as per attached example).  
-2. Tabulation of received power, Q factor, and BER for 5 fiber lengths.  
-3. Plot of received power, Q factor, and BER vs. fiber length.  
-4. Description of eye diagram changes with increasing fiber length.
+Check the box next to “Show Eye Diagram” in the BER window. The optical power meter shows the power at the input to the photodiode in both watts and dBm.
 
----
+The BER window displays the “eye diagram” and several quantities including the “Max Q Factor” and the “Min BER”.
 
-## Tabulation
+The simulation is set to run 5 “iterations”, with the fiber length varying from 50 to 150 km in 5 steps. 
 
-**Transmission Analysis Across Fiber Lengths**
+The index is displayed in the upper right corner of the layout. To step through the iterations, use the forward and reverse buttons in the lower left of the window. 
 
-![WhatsApp Image 2025-11-17 at 09 04 19_7b3ed7f1](https://github.com/user-attachments/assets/3132c581-2e0b-4f8d-838b-55ff86aefc1d)
+Note the change in received power and BER display (eye diagram, Q factor and BER) with fiber length.
+# Report:
+Cover sheet (as per attached example).
+Tabulation of received power, Q factor, and BER for 5 fiber lengths.
+Plot of received power, Q factor, and BER vs. fiber length.
+Description of eye diagram changes with increasing fiber length.
+# Tabulation:
+<img width="1600" height="1112" alt="image" src="https://github.com/user-attachments/assets/d68a47ad-4e6b-443f-afdd-c4a9cb0c57ae" />
 
 
-| S.No | Fiber Length (km) | Optical Power (Watts)   | Optical Power (dBm) | Max Q Factor | Min BER | Eye Height       | Decision Instant (Max Q / Min BER) |
-|------|--------------------|--------------------------|----------------------|--------------|---------|-------------------|-------------------------------------|
-| 1    | 56                 | 36.746 × 10⁻⁶            | -14.340              | 98.60        | 0       | 7.371602 × 10⁻⁵   | 0.5468                              |
-| 2    | 57                 | 33.962 × 10⁻⁶            | -14.690              | 87.09        | 0       | 7.003130 × 10⁻⁵   | 0.5468                              |
-| 3    | 58                 | 34.052 × 10⁻⁶            | -14.670              | 85.16        | 0       | 6.89320 × 10⁻⁵    | 0.5468                              |
-| 4    | 59                 | 32.520 × 10⁻⁶            | -14.870              | 86.767       | 0       | 6.40756 × 10⁻⁵    | 0.5468                              |
-| 5    | 60                 | 29.579 × 10⁻⁶            | -15.200              | 99.546       | 0       | 6.137684 × 10⁻⁵   | 0.5469                              |
+# CIRCUIT:
+<img width="917" height="458" alt="image" src="https://github.com/user-attachments/assets/bf47d133-db99-4a86-a8ec-9409d0737935" />
 
-
-## Graphs
-
-<img width="623" height="346" alt="image" src="https://github.com/user-attachments/assets/70b3eabe-9200-4513-b690-393a22c903d4" />
-
-<img width="624" height="361" alt="image" src="https://github.com/user-attachments/assets/0976ed4d-4d4a-4908-b934-452d3ac71a7a" />
-
-<img width="625" height="358" alt="image" src="https://github.com/user-attachments/assets/61f92b36-b5ec-43cd-9934-c173d1e178f5" />
-
-<img width="624" height="354" alt="image" src="https://github.com/user-attachments/assets/f881521a-34a4-4c3d-8ec7-f81bedf09917" />
-
-<img width="622" height="353" alt="image" src="https://github.com/user-attachments/assets/44f853ae-5882-4be5-b8f2-572872a1d9ea" />
+# Graphs:
+<img width="1912" height="1100" alt="image" src="https://github.com/user-attachments/assets/c2eee2a0-f31c-44b1-a3e5-a093a99d59e3" />
+<img width="1918" height="1016" alt="image" src="https://github.com/user-attachments/assets/2771584e-9bb3-4b82-9f9e-253fc45b045e" />
+<img width="1072" height="797" alt="image" src="https://github.com/user-attachments/assets/5b2d1472-5cea-4cb5-a0e8-bdbef5190fed" />
 
 
 
----
+# RESULT:
+The optical communication system was successfully simulated using OptiPerformer. As the fiber length increased from 50 km to 150 km, the following trends were observed:
 
-## RESULT
-
-Hence the graphs are verified using optiperformer.
+Received optical power decreased due to fiber attenuation.
+Q-factor gradually decreased, indicating signal quality degradation.
+Bit Error Rate (BER) increased with distance, showing higher error probability.
+The eye diagram became more closed at longer fiber lengths, confirming dispersion and noise effects.
+Hence, the simulation verified that optical signal performance deteriorates with increasing fiber length due to attenuation and dispersion losses
